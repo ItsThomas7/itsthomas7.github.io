@@ -1,0 +1,93 @@
+{
+    "basic_info": {
+      "description_header": "Hi",
+      "description": "I'm Thomas. I like to make things.",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "projects": [
+      {
+        "title": "Fasten Your Seatbelts",
+        "startDate": "2022-2023",
+        "description": "A matching tool for travelers searching for someone to partner up.",
+        "images": [
+          "images/portfolio/FYS/p1.jpg",
+          "images/portfolio/FYS/p2.jpg",
+          "images/portfolio/FYS/p3.jpg"
+        ],
+        "url": "https://is105-2.fys.cloud/",
+        "technologies": [
+          {
+            "class": "devicon-javascript-plain",
+            "name": "Javascript"
+          },
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS"
+          },
+          {
+            "class": "devicon-mysql-plain",
+            "name": "mysql"
+          }
+        ]
+      },
+      {
+        "title": "Calendar Component",
+        "startDate": "2022",
+        "description": "A fully custom calendar component developed with react. This has been linked with Betty Blocks platform",
+        "images": [
+          "images/portfolio/calendar/p1.jpg",
+          "images/portfolio/calendar/p2.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "logo": "fab fa-react experience-icon",
+        "company": "Betty Blocks",
+        "title": "Intern Front-End/React Developer",
+        "years": "2.2022 - 6.2022",
+        "mainTech": [
+          "React"
+        ],
+        "technologies": [
+          "React",
+          "JavaScript",
+          "Betty Blocks Platform"
+        ]
+      },
+      {
+        "logo": "fab fa-wordpress experience-icon",
+        "company": "i-motive",
+        "title": "Intern Wordpress/Frontend Developer",
+        "years": "08.2020 - 11.2020",
+        "mainTech": [
+          "Wordpress"
+        ],
+        "technologies": [
+          "Wordpress",
+          "HTML5",
+          "CSS"
+        ]
+      }
+    ]
+  }
