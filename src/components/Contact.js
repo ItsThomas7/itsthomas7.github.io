@@ -8,6 +8,7 @@ export default function Contact(){
 
         const sendEmail = (e) => {
             e.preventDefault();
+            e.target.reset();
 
             emailjs.sendForm('service_hnvbrdy', 'template_9pc4hce', form.current, 'J5FqVyJEonk-vdDF1')
                 .then((result) => {
@@ -24,7 +25,7 @@ export default function Contact(){
                         <span>Contact</span>
                     </h1>
                 </div>
-                <StyledContactForm>
+                <StyledContactForm id="about">
                     <div className="frame">
                         <div className="camera"></div>
                         <div className="inner-frame">
@@ -46,11 +47,11 @@ export default function Contact(){
                             </div>
                             <form ref={form} onSubmit={sendEmail}>
                                 <label>Name</label>
-                                <input type="text" name="user_name" />
+                                <input type="text" name="user_name" required />
                                 <label>Email</label>
-                                <input type="email" name="user_email" />
+                                <input type="email" name="user_email" required />
                                 <label>Message</label>
-                                <textarea name="message" />
+                                <textarea name="message" required />
                                 <input type="submit" value="Send" />
                             </form>
                             <div className="button">
@@ -78,7 +79,7 @@ const StyledContactForm = styled.div`
   width: 60%;
   height: 550px;
   border-radius: 15px;
-  background: grey;
+  background: #b9b9b9;
   position: relative;
   z-index: 1;
   align-items: center;
