@@ -8,14 +8,13 @@ export default function Contact(){
 
         const sendEmail = (e) => {
             e.preventDefault();
-            e.target.reset();
-
             emailjs.sendForm('service_hnvbrdy', 'template_9pc4hce', form.current, 'J5FqVyJEonk-vdDF1')
                 .then((result) => {
                     console.log(result.text);
                 }, (error) => {
                     console.log(error.text);
                 });
+            e.target.reset();
         };
 
         return (
@@ -45,7 +44,7 @@ export default function Contact(){
                                     <div className="screen-header-ellipsis"></div>
                                 </div>
                             </div>
-                            <form ref={form} onSubmit={sendEmail}>
+                            <form ref={form} onSubmit={sendEmail} id={form}>
                                 <label>Name</label>
                                 <input type="text" name="user_name" required />
                                 <label>Email</label>
